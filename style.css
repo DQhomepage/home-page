@@ -1,6 +1,8 @@
 /*화면 스크롤 기능 1#*/
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 @media ( max-width: 700px ) {
   hr {
@@ -138,6 +140,12 @@ ul,li{list-style:none;}
 body{
   background-image: url(img2.jpg);
 }*/
+
+scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 div h1{
   padding-top: 5px;
   font-family: NanumGothic;
@@ -159,17 +167,16 @@ div h1{
   background-color: rgba( 255, 255, 255, 0.1 );
 }
 .rgb2{
-  padding: 10px;
-  font-size: 50px;
-  background-color: #894a12;
-  opacity: 0.7;
-  height: 172px;
-  border-radius: 10px
+  border-radius: 8px 8px 8px 8px;
+  background-size: cover;
+  opacity: 1;
+  border-radius: 10px;
 }
 .grid {
   font-size: 70px;
   display: grid;
-  grid-template-columns: 1fr 110fr 80fr 50fr 160fr;
+  grid-template-columns: 1fr 80fr 80fr 80fr 80fr;
+    z-index: 10;
 }
 .grid2 {
   display: grid;
@@ -245,6 +252,10 @@ div h1{
 }
 .color {
   color:white;
+}
+a {
+  text-decoration:none;
+  color: white;
 }
 body {
   margin:0;
